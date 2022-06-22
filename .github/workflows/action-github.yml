@@ -10,7 +10,7 @@ jobs:
       id: tags
       shell: bash
       run: |
-        echo "::set-output name=version::$(sed -r 'ls/.+alpine://' $GITHUB_WORKSPACE/Dockerfile)
+        echo "::set-output name=version::$(sed -r 'ls/.+alpine://' $GITHUB_WORKSPACE/Dockerfile)"
     - name: Setup Docker Buildx
       uses: docker/setup-buildx-action@v2
     - name: Login to DockerHub
