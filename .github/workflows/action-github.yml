@@ -24,4 +24,4 @@ jobs:
         push: true
         tags: |
           ${{ secrets.DOCKER_HUB_NAMESPACE }}/github-actions-with-docker
-          ${{ secrets.DOCKER_HUB_NAMESPACE }}/github-actions-with-docker-${{ steps.tags.outputs.version }}
+          ${{ secrets.DOCKER_HUB_NAMESPACE }}/github-actions-with-docker:${{ steps.tags.outputs.version }}
