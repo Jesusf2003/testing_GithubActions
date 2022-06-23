@@ -5,6 +5,6 @@
 
 - Construir Imagen
 
-    * cd <Dockerfile folder>
-    * docker build -t <username>/<repository>:<tagname> .
-    * docker push <username>/<repository>:<tagname>
+    * cd Dockerfile folder
+    * docker build -t username/repository:tagname .
+    * docker push username/repository:tagname

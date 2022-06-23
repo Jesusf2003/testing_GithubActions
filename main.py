@@ -1,2 +1,7 @@
-if __name__ == '__main__':
-    print("Hola Mundo")
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def counter():
+    return "Desplegado desde Github Actions"
