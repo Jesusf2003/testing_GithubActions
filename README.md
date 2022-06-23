@@ -1,20 +1,18 @@
 # **Github Actions - Demo**
 
-## Herramientas y tecnologías usadas
+## **Herramientas y tecnologías usadas**
 
-- Docker Windows / Ubuntu 18.04
+- Docker Desktop Windows / Ubuntu 18.04
 
 - Python 3.10
 
-## Pasos a seguir
-
-### Creando carpeta de proyecto
+## **Creando carpeta de proyecto**
 
 - Crear carpeta .github/workflows
 
 - Crear archivo **nombre del archivo**.yml
 
-- Configurar la acción de la siguiente forma:
+- Definiendo la acción:
 
     * Nombre de la acción.
 
@@ -22,15 +20,29 @@
 
     * Definir sistema operativo.
 
-    * Definir los pasos a realizar.
+    * Pasos.
 
-### Generar token de DockerHub
+## **Generar token de DockerHub**
 
 - Ingresar a DockerHub
 
-- Crear un repositorio
+![](images/DockerHub-Repository.png)
 
-### Subir una imagen a DockerHub
+- Ir a configuración de la cuenta
+
+![](images/DockerHub-AccountSettings.png)
+
+- Ir a la pestaña Security
+
+![](images/DockerHub-Security.png)
+
+- Hacer click en __New Access Token__
+
+![](images/DockerHub-NewToken.png)
+
+Ingresar descripción y definir los permisos del Token.
+
+## **Subir una imagen a DockerHub**
 
 - cd path/Dockerfile folder
 
@@ -38,10 +50,18 @@
 
 - docker push username/repository:**tagname**
 
-### Configurando repositorio de Github
+## **Configurando repositorio de Github**
 
 - Ir al repositorio
 
 - Ir a la pestaña de configuraciones / Settings
 
 - Ir al menú Secrets / Actions
+
+- Crear los siguientes __Secrets__:
+
+    - DOCKER_HUB-TOKEN
+
+    - DOCKER_HUB_PASSWORD
+
+    - DOCKER_HUB_NAMESPACE

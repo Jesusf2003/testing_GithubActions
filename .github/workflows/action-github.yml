@@ -27,5 +27,5 @@ jobs:
         with:
           push: true
           tags: |
-            ${{ secrets.DOCKER_HUB_NAMESPACE }}/github-actions-with-docker:playground-ssh
-            ${{ secrets.DOCKER_HUB_NAMESPACE }}/github-actions-with-docker:playground-ssh
+            ${{ secrets.DOCKER_HUB_NAMESPACE }}/github-actions-with-docker:latest
+            ${{ secrets.DOCKER_HUB_NAMESPACE }}/github-actions-with-docker:latest
