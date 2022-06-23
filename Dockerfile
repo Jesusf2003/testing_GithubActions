@@ -1,5 +1,5 @@
 # Distribution of Linux
-FROM alpine:3.13
+FROM alpine:3.14
 
 # aadiendo condifugración para archivo SSH
 RUN apk --no-cache add openssh-client
